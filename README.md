@@ -1,8 +1,6 @@
 # Globality-Coding-Challange
-
-## Configuration: Java(jre1.8.0_144)
-
-## File to run: Globality-Coding-Challange\src\SupermarketOptmization.java
+  Configuration: Java(jre1.8.0_144)
+  File to run: Globality-Coding-Challange\src\SupermarketOptmization.java
 
 ## To run:
   java SupermarketOptmization <full path of transaction file> <sigma-value>
