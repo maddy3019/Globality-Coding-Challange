@@ -1,3 +1,4 @@
+
 /**
  * This class implements an alogrithm for generating all frequent item sets of size 3 or more:
  * groups of 3 or more items that appear together in the transactions log at least as often as
@@ -46,9 +47,9 @@ public class SupermarketOptmization {
 		String[] skuRetriever = computeFrequentItemsets(count);
 
 		// generate output
-		PrintWriter writer = new PrintWriter("Frequent Itemset.txt", "utf-8");
+		PrintWriter writer = new PrintWriter("Frequent Itemset.csv", "utf-8");
 		// writing header
-		writer.append("Itemset size" + "\t" + "Frequency" + "\t" + "Itemset\r");
+		writer.append("Itemset size" + "," + "Frequency" + "," + "Itemset\n");
 		for (String m : countKeeper.keySet()) {
 			if (countKeeper.get(m) >= sigma) {
 				addToResult(m, skuRetriever, countKeeper.get(m), writer);
@@ -138,7 +139,7 @@ public class SupermarketOptmization {
 			skuItemSet += skuRetriever[Integer.parseInt(index)] + ",";
 		}
 		skuItemSet = skuItemSet.substring(0, skuItemSet.length() - 1) + "]";
-		writer.append(indexes.length + "\t\t\t\t" + frequency + "\t\t\t\t" + skuItemSet + "\r");
+		writer.append(indexes.length + "," + frequency + "," + "\"" + skuItemSet + "\"" + "\n");
 		System.out.println(indexes.length + "\t" + frequency + "\t" + skuItemSet + "\r");
 	}
 
