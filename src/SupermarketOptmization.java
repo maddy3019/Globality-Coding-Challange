@@ -41,12 +41,15 @@ public class SupermarketOptmization {
 	public static void main(String[] args) throws FileNotFoundException, IOException {
 		String fileName = args[0];
 		int sigma = Integer.parseInt(args[1]);
-
+		
+		// Processing transaction file...
 		int count = processTransactionFile(fileName);
-
+		
+		System.out.println("Computing frequent itemsets...");
 		String[] skuRetriever = computeFrequentItemsets(count);
 
 		// generate output
+		System.out.println("Writing output to the file...");
 		PrintWriter writer = new PrintWriter("Frequent Itemset.csv", "utf-8");
 		// writing header
 		writer.append("Itemset size" + "," + "Frequency" + "," + "Itemset\n");
