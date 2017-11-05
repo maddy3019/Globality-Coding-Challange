@@ -10,7 +10,7 @@
   java SupermarketOptimization_Trial 'C:\Disk (D)\MSCS UTD\Full Time\retail_25k.dat' 4
    
 ## Output File:
-  Output file "Frequent Itemset.txt" is generated in root directory of the project i.e. "Globality-Coding-Challange\Frequent Itemset.txt"
+  Output file "Frequent Itemset.csv" is generated in root directory of the project i.e. "Globality-Coding-Challange\Frequent Itemset.csv"
   
 ## Runtime:
   Worst Case runtime = O(2^n), where n = size of largest transaction.
