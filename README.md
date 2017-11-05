@@ -13,4 +13,4 @@
   Output file "Frequent Itemset.csv" is generated in root directory of the project i.e. "Globality-Coding-Challange\Frequent Itemset.csv"
   
 ## Runtime:
-  Worst Case runtime = O(2^n), where n = size of largest transaction.
+  Worst Case runtime = O(n * 2^n), where n = size of largest transaction.
